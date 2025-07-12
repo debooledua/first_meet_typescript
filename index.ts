@@ -41,17 +41,24 @@ let c : number = Number(prompt('Введіть 3 - сторону: '));
     if(isNaN(a) || isNaN(b) || isNaN(c))
     console.log("Не число!")
     else
-    if (a + b <= c || a + c <= b || b + c <= a)
-        console.log("Не трикутник")
-    else
-    if (a === b && b === c)
-        console.log("Рівносторонній");
-    else
-    if (a !== b && b !== c && c !== a )
-        console.log("Різносторонній")
-    else
-    if (a === b && a !== c || a === c && a !== b || b === c && b !== a)
-        console.log("Рівнобедрений")
+switch(true) {
+        case a + b <= c || a + c <= b || b + c <= a:
+             console.log("Не трикутник")
+            break;
+        case a === b && b === c:
+            console.log("Рівносторонній");
+            break;
+        case a !== b && b !== c && c !== a:
+            console.log("Різносторонній");
+            break;
+        case a === b && a !== c || a === c && a !== b || b === c && b !== a:
+            console.log("Рівнобедрений");
+            break;
+        default:
+            console.log("Щось тут не так");
+            break;
+    }
+
 
 
 // #5
