@@ -11,7 +11,10 @@ else { console.log("Число поза діапазоном") }
 
 let suma : number = Number(prompt('Введи загальну суму рахунку: '));
 let percent : number = Number(prompt('Введи відсоток чайових (без позначки проценту): '));
-let tip = `Чайові, ${((suma * percent)/100)}!`; 
+let tip = `Чайові, ${((suma * percent)/100)}!`;
+if (percent === 0) 
+console.log("Error")
+else 
 console.log(tip)
 
 // #3
