@@ -1,21 +1,21 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 // #1
-/*
+
 let number : number = Number(prompt('Введи перше число: '));
 if (!isNaN (number) && number <=50 && number >= 10)
 console.log("Число в діапазоні")
 else { console.log("Число поза діапазоном") }
-*/
+
 // #2
-/*
+
 let suma : number = Number(prompt('Введи загальну суму рахунку: '));
 let percent : number = Number(prompt('Введи відсоток чайових (без позначки проценту): '));
 let tip = `Чайові, ${((suma * percent)/100)}!`; 
 console.log(tip)
-*/
+
 // #3
-/*
+
 let old : number = Number(prompt('Введіть вік людини: '));
     if (old <= 1 || old > 100) 
     console.log("Error");
@@ -31,10 +31,10 @@ let old : number = Number(prompt('Введіть вік людини: '));
  else
     if (old >= 18 && old <= 64)
         console.log("Дорослий квиток - 120 грн")
-*/
+
 // #4
 
-/*
+
 let a : number = Number(prompt('Введіть 1 - сторону: '));
 let b : number = Number(prompt('Введіть 2 - сторону: '));
 let c : number = Number(prompt('Введіть 3 - сторону: '));
@@ -52,10 +52,10 @@ let c : number = Number(prompt('Введіть 3 - сторону: '));
     else
     if (a === b && a !== c || a === c && a !== b || b === c && b !== a)
         console.log("Рівнобедрений")
-*/
+
 
 // #5
-/*
+
 let a : number = Number(prompt('Введіть кут (без позначки): '));
 if (a <= 0 || a >= 180 )
     console.log("Не кут")
@@ -68,4 +68,3 @@ if (a == 90 )
 else
 if (a > 90 && a < 180 )
     console.log("Тупий")
-*/
