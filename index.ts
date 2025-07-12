@@ -18,13 +18,13 @@ else
 console.log(tip)
 
 // #3
-
 let old : number = Number(prompt('Введіть вік людини: '));
     if (old <= 1 || old > 100) 
     console.log("Error");
  else
     if (old >= 18 && old <= 64)
     console.log("Дорослий квиток - 120 грн")
+    else
     if (old >= 6 && old <= 65)
     console.log("Безкоштовно")
  else
